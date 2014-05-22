@@ -26,13 +26,6 @@ import java.util.List;
  * Description: <br>
  */
 public class GroovyShellService implements ApplicationContextAware {
-    /**
-     * RCS (CVS/SVN) information
-     *
-     * @noinspection UnusedDeclaration
-     */
-    private static final String RCS_ID = "$Id$";
-
     private static final Logger LOGGER = LoggerFactory.getLogger(GroovyShellService.class);
 
     private int listenPort;

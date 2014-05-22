@@ -9,9 +9,10 @@ Usage:
 Add GroovyShellService bean to spring context.
 For security reasons service bound to loopback interface only.
 
-<code>
-&lt;bean class="ru.ind.tgs.GroovyShellService" p:listenPort="3333"/&gt;
-</code
+```xml
+<bean class="ru.ind.tgs.GroovyShellService" p:listenPort="3333"/>
+```
+
 
 Run your spring project.
 

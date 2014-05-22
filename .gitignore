@@ -1,0 +1,23 @@
+# eclipse conf file
+.settings
+.classpath
+.project
+.manager
+.scala_dependencies
+.cache
+
+# idea conf files
+.idea
+*.iml
+*.ipr
+*.iws
+
+# gradle dir
+.gradle
+build
+
+# building
+/target
+
+# other
+atlassian-ide-plugin.xml

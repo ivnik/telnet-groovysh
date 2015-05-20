@@ -106,6 +106,12 @@
             <version>${jansi.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>jline</groupId>
+            <artifactId>jline</artifactId>
+            <version>2.12.1</version>
+        </dependency>
+
         <!-- SLF4J -->
         <dependency>
             <groupId>org.slf4j</groupId>

@@ -31,8 +31,8 @@ public class GroovyShellService implements ApplicationContextAware {
     private int listenPort;
 
     private static final List<String> DEFAULT_IMPORTS = Arrays.asList(
-            "import java.util.*",
-            "import static java.util.concurrent.TimeUnit.*"
+            "java.util.*",
+            "static java.util.concurrent.TimeUnit.*"
     );
     private List<String> imports;
 
@@ -101,7 +101,7 @@ public class GroovyShellService implements ApplicationContextAware {
                                 telnet.getOutputStream().writeWILL(3); // supress go ahead
 
                                 final Binding bindings = new Binding();
-                                bindings.setVariable("context", applicationContext);
+                                bindings.setVariable("ctx", applicationContext);
                                 for (String name : applicationContext.getBeanDefinitionNames()) {
                                     try {
                                         bindings.setVariable(name, applicationContext.getBean(name));

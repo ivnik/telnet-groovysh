@@ -119,7 +119,7 @@ public class GroovyShellService implements ApplicationContextAware {
                                     sh.getImports().addAll(imports);
                                 }
 
-                                sh.run();
+                                sh.run(null);
                             } catch (IOException e) {
                                 // ignore
                             } finally {
